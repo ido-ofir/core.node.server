@@ -1,6 +1,6 @@
 {
     "name": "core.node.server",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "a basic express server",
     "main": "index.js",
     "scripts": {
@@ -22,6 +22,10 @@
     "homepage": "https://github.com/ido-ofir/core.node.server#readme",
     "dependencies": {
         "core.constructor": "^1.0.3",
+        "core.node.colors": "^1.0.1",
+        "core.node.log": "^1.0.1",
+        "core.node.print": "^1.0.0",
+        "core.plugin.hash": "^1.0.0",
         "core.plugin.uuid": "^1.0.0",
         "express": "^4.16.3"
     }

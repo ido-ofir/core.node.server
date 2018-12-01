@@ -10,6 +10,9 @@ var core = new Core({
     plugins: [
         require('core.plugin.uuid'),
         require('core.plugin.hash'),
+        require('core.node.colors'),
+        require('core.node.print'),
+        require('core.node.colors'),
     ],
     extend: {
         express,
@@ -149,7 +152,9 @@ var core = new Core({
             }
             args.unshift(name, express.json(), core.middlewares.validate, core.middlewares.error);
             return app.use.apply(app, args)
-        }
+        },
+
+        listen(){ app.listen.apply(app, [].slice.call(arguments)); }
     }
 });
 
